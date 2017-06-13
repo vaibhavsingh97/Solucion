@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Govindam Restaurant</string>
+    <string name="restaurant_name">Govindam Restaurant</string>
+    <string name="location">SH 12, SHAMLI, Shamli, Uttar Pradesh 247776, India</string>
+    <string name="phone">+91 84490 69777</string>
+    <string name="time">9AM-10PM</string>
+    <string name="title_of_description">Description</string>
+    <string name="description">Govindam Indian Cuisine brings you a variety of dishes from different regions of India. You can enjoy the warmth of Indian hospitality through its cuisine and a variety of beverages. It is not just a place to eat and drink, but to have fun and relax. It is our commitment to use fresh ingredients. We do not use any preservatives or food color.</string>
 </resources>

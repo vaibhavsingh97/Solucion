@@ -4,8 +4,9 @@
     <string name="team_b">Team B</string>
     <string name="zero">0</string>
     <string name="foul">Foul</string>
+    <string name="disqualify">Disqualify</string>
     <string name="plus_three_points">+3 Points</string>
     <string name="plus_two_points">+2 Points</string>
     <string name="plus_one_point">+1 Point</string>
-    <string name="free_throw">Foul Throw</string>
+    <string name="free_throw">Free Throw</string>
 </resources>

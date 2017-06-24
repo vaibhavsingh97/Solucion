@@ -28,6 +28,7 @@
                     android:text="@string/team_a" />
 
                 <TextView
+                    android:id="@+id/team_a_score"
                     style="@style/ScoreTextStyle"
                     android:text="@string/zero" />
 
@@ -44,28 +45,39 @@
                         android:text="@string/foul" />
 
                     <TextView
+                        android:id="@+id/foul_count_a"
                         style="@style/FoulCountStyle"
                         android:text="@string/zero" />
 
                     <Button
+                        android:id="@+id/foul_button_a"
                         style="@style/FoulButtonStyle"
+                        android:onClick="addFoulCountOfA"
                         android:text="@string/foul" />
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/plus_three_button_A"
                     style="@style/ButtonStyle"
+                    android:onClick="addThreePointsForA"
                     android:text="@string/plus_three_points" />
 
                 <Button
+                    android:id="@+id/plus_two_button_A"
                     style="@style/ButtonStyle"
+                    android:onClick="addTwoPointsForA"
                     android:text="@string/plus_two_points" />
 
                 <Button
+                    android:id="@+id/plus_one_button_A"
                     style="@style/ButtonStyle"
+                    android:onClick="addOnePointForA"
                     android:text="@string/plus_one_point" />
 
                 <Button
+                    android:id="@+id/free_throw_A"
                     style="@style/ButtonStyle"
+                    android:onClick="freeThrowButtonForA"
                     android:text="@string/free_throw" />
             </LinearLayout>
 
@@ -85,6 +97,7 @@
                     android:text="@string/team_b" />
 
                 <TextView
+                    android:id="@+id/team_b_score"
                     style="@style/ScoreTextStyle"
                     android:text="@string/zero" />
 
@@ -101,28 +114,39 @@
                         android:text="@string/foul" />
 
                     <TextView
+                        android:id="@+id/foul_count_b"
                         style="@style/FoulCountStyle"
                         android:text="@string/zero" />
 
                     <Button
+                        android:id="@+id/foul_button_b"
                         style="@style/FoulButtonStyle"
+                        android:onClick="addFoulCountOfB"
                         android:text="@string/foul" />
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/plus_three_button_B"
                     style="@style/ButtonStyle"
+                    android:onClick="addThreePointsForB"
                     android:text="@string/plus_three_points" />
 
                 <Button
+                    android:id="@+id/plus_two_button_B"
                     style="@style/ButtonStyle"
+                    android:onClick="addTwoPointsForB"
                     android:text="@string/plus_two_points" />
 
                 <Button
+                    android:id="@+id/plus_one_button_B"
                     style="@style/ButtonStyle"
+                    android:onClick="addOnePointForB"
                     android:text="@string/plus_one_point" />
 
                 <Button
+                    android:id="@+id/free_throw_B"
                     style="@style/ButtonStyle"
+                    android:onClick="freeThrowButtonForB"
                     android:text="@string/free_throw" />
             </LinearLayout>
 
@@ -130,6 +154,7 @@
 
         <Button
             style="@style/ResetButtonStyle"
+            android:onClick="reset"
             android:text="Reset" />
     </LinearLayout>
 

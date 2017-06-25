@@ -9,20 +9,20 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    int scoreTeamA = 0;
-    int scoreTeamB = 0;
-    int foulCountOfTeamA = 0;
-    int foulCountOfTeamB = 0;
-    Button foulButtonA;
-    Button foulButtonB;
-    Button plusThreeButtonA;
-    Button plusTwoButtonA;
-    Button plusOneButtonA;
-    Button freeThrowA;
-    Button plusThreeButtonB;
-    Button plusTwoButtonB;
-    Button plusOneButtonB;
-    Button freeThrowB;
+    int scoreTeamA;
+    int scoreTeamB;
+    int foulCountOfTeamA;
+    int foulCountOfTeamB;
+    private Button foulButtonA;
+    private Button foulButtonB;
+    private Button plusThreeButtonA;
+    private Button plusTwoButtonA;
+    private Button plusOneButtonA;
+    private Button freeThrowA;
+    private Button plusThreeButtonB;
+    private Button plusTwoButtonB;
+    private Button plusOneButtonB;
+    private Button freeThrowB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

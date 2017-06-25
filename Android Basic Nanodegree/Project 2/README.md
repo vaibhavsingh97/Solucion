@@ -6,5 +6,5 @@ The app tracks scores for Basketball games.
 [Project Review](https://review.udacity.com/#!/reviews/568816/shared)
 
 <p align="center">
-  <img src="demo.gif"  width="350"/>
+  <img src="Demo/demo.gif"  width="350"/>
 </p>

@@ -1,6 +1,10 @@
 # Score Keeper
 
 ## Implement an app to track scores between two teams within a game.
-The app tracks scores for Basketball games.
+The app tracks scores for Basketball games.  
 
-<img src="demo.gif" width="270">
+[Project Review](https://review.udacity.com/#!/reviews/568816/shared)
+
+<p align="center">
+  <img src="demo.gif"  width="350"/>
+</p>

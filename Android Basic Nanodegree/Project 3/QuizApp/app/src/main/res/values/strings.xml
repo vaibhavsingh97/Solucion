@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">Quiz App</string>
+    <string name="welcomeTitle">Welcome to Quiz App</string>
+    <string name="name">Name:</string>
+    <string name="name_hint">Enter your name</string>
+    <string name="email">Email:</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="title_question_1">Question 1</string>
+    <string name="question_1_content">What is the size of byte variable?</string>
+    <string name="question_1_option_1">8 bit</string>
+    <string name="question_1_option_2">16 bit</string>
+    <string name="question_1_option_3">32 bit</string>
+    <string name="question_1_option_4">64 bit</string>
+    <string name="title_question_2">Question 2</string>
+    <string name="question_2_content">Object-Oriented Programming Means?</string>
+    <string name="question_2_option_1">Begin objective about what you develop</string>
+    <string name="question_2_option_2">Designing the application based on the objects discovered when analysing the problem</string>
+    <string name="question_2_option_3">Writing an algorithm before writing your program and having a test plan</string>
+    <string name="question_2_option_4">Writing a program composed of Java classes</string>
+    <string name="title_question_3">Question 3</string>
+    <string name="question_3_content">Method Overriding is an example of</string>
+    <string name="question_3_option_1">Static Binding.</string>
+    <string name="question_3_option_2">Dynamic Binding.</string>
+    <string name="question_3_option_3">Both of the above.</string>
+    <string name="question_3_option_4">None of the above.</string>
+    <string name="title_question_4">Question 4</string>
+    <string name="question_4_content">What is the main programming language for Android Development?</string>
+    <string name="title_question_5">Question 5</string>
+    <string name="question_5_content">Which of the following are Java keywords?</string>
+    <string name="question_5_option_1">start</string>
+    <string name="question_5_option_2">long</string>
+    <string name="question_5_option_3">static</string>
+    <string name="question_5_option_4">end</string>
 </resources>

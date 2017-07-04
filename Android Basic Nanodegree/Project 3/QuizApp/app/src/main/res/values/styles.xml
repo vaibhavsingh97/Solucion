@@ -8,4 +8,83 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="WelcomeTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_16dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">#607D8B</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TitletextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="PersonalDetailTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="PersonalDetailEditTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="QuestionTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_16dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_16dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="QuestionContentTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_16dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_8dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AnswerTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_16dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_right_16dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="RadioButtons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_16dp</item>
+        <item name="android:paddingLeft">@dimen/padding_left_8dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_right_16dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CheckBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_16dp</item>
+        <item name="android:paddingLeft">@dimen/padding_left_8dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_right_16dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
 </resources>

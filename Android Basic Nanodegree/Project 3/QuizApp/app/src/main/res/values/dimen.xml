@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="padding_left_8dp">8dp</dimen>
+    <dimen name="padding_16dp">16dp</dimen>
+    <dimen name="padding_top_16dp">16dp</dimen>
+    <dimen name="padding_left_16dp">16dp</dimen>
+    <dimen name="padding_right_16dp">16dp</dimen>
+    <dimen name="margin_top_8dp">8dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_top_16dp">16dp</dimen>
+    <dimen name="margin_left_16dp">16dp</dimen>
+    <dimen name="margin_right_16dp">16dp</dimen>
+</resources>

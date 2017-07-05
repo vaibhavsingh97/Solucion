@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="@dimen/padding_8dp">
 
@@ -20,9 +20,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_16dp"
-            android:padding="@dimen/padding_8dp"
             android:background="@drawable/border"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="@dimen/padding_8dp">
 
             <TextView
                 style="@style/TitletextView"
@@ -32,15 +32,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="@dimen/padding_top_16dp"
                 android:paddingLeft="@dimen/padding_left_16dp"
-                android:paddingRight="@dimen/padding_right_16dp">
+                android:paddingRight="@dimen/padding_right_16dp"
+                android:paddingTop="@dimen/padding_top_16dp">
 
                 <TextView
                     style="@style/PersonalDetailTextView"
                     android:text="@string/name" />
 
                 <EditText
+                    android:id="@+id/Name"
                     style="@style/PersonalDetailEditTextView"
                     android:hint="@string/name_hint"
                     android:inputType="textAutoComplete" />
@@ -50,15 +51,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="@dimen/padding_top_16dp"
                 android:paddingLeft="@dimen/padding_left_16dp"
-                android:paddingRight="@dimen/padding_right_16dp">
+                android:paddingRight="@dimen/padding_right_16dp"
+                android:paddingTop="@dimen/padding_top_16dp">
 
                 <TextView
                     style="@style/PersonalDetailTextView"
                     android:text="@string/email" />
 
                 <EditText
+                    android:id="@+id/Email"
                     style="@style/PersonalDetailEditTextView"
                     android:hint="@string/email_hint"
                     android:inputType="textEmailAddress" />
@@ -74,23 +76,27 @@
             android:text="@string/question_1_content" />
 
         <RadioGroup
+            android:id="@+id/RadioGroup1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <RadioButton
+                android:id="@+id/RadioButton1_1"
                 style="@style/RadioButtons"
-                android:text="@string/question_1_option_1"
-                android:textColor="@android:color/holo_green_dark" />
+                android:text="@string/question_1_option_1" />
 
             <RadioButton
+                android:id="@+id/RadioButton1_2"
                 style="@style/RadioButtons"
                 android:text="@string/question_1_option_2" />
 
             <RadioButton
+                android:id="@+id/RadioButton1_3"
                 style="@style/RadioButtons"
                 android:text="@string/question_1_option_3" />
 
             <RadioButton
+                android:id="@+id/RadioButton1_4"
                 style="@style/RadioButtons"
                 android:text="@string/question_1_option_4" />
         </RadioGroup>
@@ -104,23 +110,27 @@
             android:text="@string/question_2_content" />
 
         <RadioGroup
+            android:id="@+id/RadioGroup2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <RadioButton
+                android:id="@+id/RadioButton2_1"
                 style="@style/RadioButtons"
                 android:text="@string/question_2_option_1" />
 
             <RadioButton
+                android:id="@+id/RadioButton2_2"
                 style="@style/RadioButtons"
-                android:text="@string/question_2_option_2"
-                android:textColor="@android:color/holo_green_dark" />
+                android:text="@string/question_2_option_2" />
 
             <RadioButton
+                android:id="@+id/RadioButton2_3"
                 style="@style/RadioButtons"
                 android:text="@string/question_2_option_3" />
 
             <RadioButton
+                android:id="@+id/RadioButton2_4"
                 style="@style/RadioButtons"
                 android:text="@string/question_2_option_4" />
         </RadioGroup>
@@ -134,23 +144,27 @@
             android:text="@string/question_3_content" />
 
         <RadioGroup
+            android:id="@+id/RadioGroup3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <RadioButton
+                android:id="@+id/RadioButton3_1"
                 style="@style/RadioButtons"
                 android:text="@string/question_3_option_1" />
 
             <RadioButton
+                android:id="@+id/RadioButton3_2"
                 style="@style/RadioButtons"
-                android:text="@string/question_3_option_2"
-                android:textColor="@android:color/holo_green_dark" />
+                android:text="@string/question_3_option_2" />
 
             <RadioButton
+                android:id="@+id/RadioButton3_3"
                 style="@style/RadioButtons"
                 android:text="@string/question_3_option_3" />
 
             <RadioButton
+                android:id="@+id/RadioButton3_4"
                 style="@style/RadioButtons"
                 android:text="@string/question_3_option_4" />
         </RadioGroup>
@@ -163,7 +177,9 @@
             style="@style/QuestionContentTextView"
             android:text="@string/question_4_content" />
 
-        <EditText style="@style/AnswerTextView" />
+        <EditText
+            android:id="@+id/EditTextQuestion4"
+            style="@style/AnswerTextView" />
 
         <TextView
             style="@style/QuestionTextView"
@@ -174,33 +190,47 @@
             android:text="@string/question_5_content" />
 
         <CheckBox
+            android:id="@+id/CheckBox_1"
             style="@style/CheckBox"
             android:text="@string/question_5_option_1" />
 
         <CheckBox
+            android:id="@+id/CheckBox_2"
             style="@style/CheckBox"
             android:text="@string/question_5_option_2" />
 
         <CheckBox
+            android:id="@+id/CheckBox_3"
             style="@style/CheckBox"
             android:text="@string/question_5_option_3" />
 
         <CheckBox
+            android:id="@+id/CheckBox_4"
             style="@style/CheckBox"
             android:text="@string/question_5_option_4" />
 
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal">
+            android:layout_marginTop="@dimen/margin_top_16dp"
+            android:gravity="center">
 
             <Button
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/padding_8dp"
-                android:text="Submit" />
-        </LinearLayout>
+                android:id="@+id/ResetButton"
+                style="@style/ResetButton"
+                android:text="@string/reset" />
+
+            <Button
+                android:id="@+id/ResultButton"
+                style="@style/ResultButton"
+                android:text="@string/get_result" />
+
+            <Button
+                android:id="@+id/SubmitButton"
+                style="@style/SubmitButton"
+                android:text="@string/submit" />
+
+        </RelativeLayout>
     </LinearLayout>
 </ScrollView>

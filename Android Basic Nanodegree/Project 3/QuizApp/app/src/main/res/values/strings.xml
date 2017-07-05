@@ -31,4 +31,14 @@
     <string name="question_5_option_2">long</string>
     <string name="question_5_option_3">static</string>
     <string name="question_5_option_4">end</string>
+    <string name="your_total_score_is">Your total score is:</string>
+    <string name="java">java</string>
+    <string name="warning1">Please make sure you have entered </string>
+    <string name="warning2">Please make sure you have answerd all the question.</string>
+    <string name="correctly">correctly</string>
+    <string name="marks_scored_in_individual_question">Marks scored in Individual Question:</string>
+    <string name="quiz_score">Quiz Score</string>
+    <string name="submit">Submit</string>
+    <string name="get_result">Get Result</string>
+    <string name="reset">Reset</string>
 </resources>

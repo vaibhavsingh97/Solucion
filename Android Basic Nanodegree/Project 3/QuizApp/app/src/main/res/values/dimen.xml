@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="width_2dp">2dp</dimen>
+    <dimen name="radius_10dp">10dp</dimen>
+    <dimen name="thickness_1dp">1dp</dimen>
+    <dimen name="padding_top_4dp">4dp</dimen>
+    <dimen name="padding_left_4dp">4dp</dimen>
+    <dimen name="padding_right_4dp">4dp</dimen>
+    <dimen name="padding_bottom_4dp">4dp</dimen>
     <dimen name="padding_8dp">8dp</dimen>
     <dimen name="padding_left_8dp">8dp</dimen>
     <dimen name="padding_16dp">16dp</dimen>

@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle"
-    android:thickness="1dp">
+    android:thickness="@dimen/thickness_1dp">
     <!--Setting background color-->
-    <solid android:color="#fff">
-
-    </solid>
+    <solid android:color="#fff"></solid>
     <stroke
-        android:width="2dp"
-        android:color="#000">
-
-    </stroke>
+        android:width="@dimen/width_2dp"
+        android:color="#000"></stroke>
     <padding
-        android:bottom="4dp"
-        android:left="4dp"
-        android:right="4dp"
-        android:top="4dp">
-
-    </padding>
-    <corners android:radius="10dp">
-
-    </corners>
+        android:bottom="@dimen/padding_bottom_4dp"
+        android:left="@dimen/padding_left_4dp"
+        android:right="@dimen/padding_right_4dp"
+        android:top="@dimen/margin_top_8dp"></padding>
+    <corners android:radius="@dimen/radius_10dp"></corners>
 </shape>

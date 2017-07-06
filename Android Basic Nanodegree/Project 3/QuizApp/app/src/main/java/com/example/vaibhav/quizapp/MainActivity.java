@@ -142,8 +142,8 @@ public class MainActivity extends AppCompatActivity {
      */
     @OnClick(R.id.SubmitButton)
     public void onClickSubmit(View view) {
-        answer4 = mEditTextQuestion4.getText().toString().toLowerCase();
-        if (checked1 && checked2 && checked3 && !answer4.equals("") && checked5) {
+        answer4 = mEditTextQuestion4.getText().toString().toLowerCase().trim();
+        if (checked1 && checked2 && checked3 && !answer4.equalsIgnoreCase("") && checked5) {
             if (answer4.equals(getResources().getString(R.string.java))) {
                 score4 = 20;
             } else {

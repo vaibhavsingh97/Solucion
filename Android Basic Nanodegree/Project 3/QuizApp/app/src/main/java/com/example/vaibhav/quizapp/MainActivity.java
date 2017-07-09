@@ -62,8 +62,7 @@ public class MainActivity extends AppCompatActivity {
      * @return name of person
      */
     private String getName() {
-        String name = mName.getText().toString();
-        return name;
+        return mName.getText().toString();
     }
 
     /**
@@ -143,8 +142,8 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.SubmitButton)
     public void onClickSubmit(View view) {
         answer4 = mEditTextQuestion4.getText().toString().toLowerCase().trim();
-        if (checked1 && checked2 && checked3 && !answer4.equalsIgnoreCase("") && checked5) {
-            if (answer4.equals(getResources().getString(R.string.java))) {
+        if (checked1 && checked2 && checked3 && !answer4.equals("") && checked5) {
+            if (answer4.equalsIgnoreCase(getResources().getString(R.string.java))) {
                 score4 = 20;
             } else {
                 score4 = 0;
@@ -168,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
             totalScore = score1 + score2 + score3 + score4 + score5;
             String message = "Hey! " + getName() + ", " + getString(R.string.your_total_score_is) + totalScore + " \ud83d\ude01";
             Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
-            disable();
+            toggleViews(false);
             mSubmit.setVisibility(View.GONE);
             mResult.setVisibility(View.VISIBLE);
         } else {
@@ -228,44 +227,25 @@ public class MainActivity extends AppCompatActivity {
         resetRadioGroups();
         mSubmit.setVisibility(View.VISIBLE);
         mResult.setVisibility(View.GONE);
-        enable();
+        toggleViews(true);
     }
 
-    private void disable() {
-        mName.setEnabled(false);
+    private void toggleViews(boolean value){
+        mName.setEnabled(value);
         mEmail.setEnabled(false);
         for (int i = 0; i < mRadioGroup1.getChildCount(); i++) {
-            mRadioGroup1.getChildAt(i).setEnabled(false);
+            mRadioGroup1.getChildAt(i).setEnabled(value);
         }
         for (int i = 0; i < mRadioGroup2.getChildCount(); i++) {
-            mRadioGroup2.getChildAt(i).setEnabled(false);
+            mRadioGroup2.getChildAt(i).setEnabled(value);
         }
         for (int i = 0; i < mRadioGroup3.getChildCount(); i++) {
-            mRadioGroup3.getChildAt(i).setEnabled(false);
+            mRadioGroup3.getChildAt(i).setEnabled(value);
         }
-        mEditTextQuestion4.setEnabled(false);
-        mCheckBox1.setEnabled(false);
-        mCheckBox2.setEnabled(false);
-        mCheckBox3.setEnabled(false);
-        mCheckBox4.setEnabled(false);
-    }
-
-    private void enable() {
-        mName.setEnabled(true);
-        mEmail.setEnabled(true);
-        for (int i = 0; i < mRadioGroup1.getChildCount(); i++) {
-            mRadioGroup1.getChildAt(i).setEnabled(true);
-        }
-        for (int i = 0; i < mRadioGroup2.getChildCount(); i++) {
-            mRadioGroup2.getChildAt(i).setEnabled(true);
-        }
-        for (int i = 0; i < mRadioGroup3.getChildCount(); i++) {
-            mRadioGroup3.getChildAt(i).setEnabled(true);
-        }
-        mEditTextQuestion4.setEnabled(true);
-        mCheckBox1.setEnabled(true);
-        mCheckBox2.setEnabled(true);
-        mCheckBox3.setEnabled(true);
-        mCheckBox4.setEnabled(true);
+        mEditTextQuestion4.setEnabled(value);
+        mCheckBox1.setEnabled(value);
+        mCheckBox2.setEnabled(value);
+        mCheckBox3.setEnabled(value);
+        mCheckBox4.setEnabled(value);
     }
 }

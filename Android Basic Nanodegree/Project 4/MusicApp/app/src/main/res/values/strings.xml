@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Music App</string>
+    <string name="hi_dot">Hi.</string>
+    <string name="hi_exclamation">Hi! </string>
+    <string name="lets_get_started">Let\'s Get Started</string>
+    <string name="Name">Name</string>
+    <string name="full_name">full_name</string>
+    <string name="Username">Username</string>
+    <string name="Continue">Continue</string>
+    <string name="welcome_screen">Welcome Screen</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="please_enter_correct_username">Please enter correct username</string>
+    <string name="please_enter_your_username">Please enter your username</string>
+
 </resources>

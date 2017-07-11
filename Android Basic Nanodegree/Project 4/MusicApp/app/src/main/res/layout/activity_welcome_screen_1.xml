@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.vaibhav.musicapp.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/welcomeScreen_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/firstLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/WelcomeScreenTitleText"
+                android:text="@string/hi_dot" />
+
+            <TextView
+                style="@style/WelcomeScreenContentText"
+                android:text="@string/lets_get_started" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstLinearLayout"
+            android:layout_margin="@dimen/margin_16dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormTextView"
+                android:text="@string/Name" />
+
+            <EditText
+                android:id="@+id/NameEditTextView"
+                style="@style/FormEditText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/Continue_button"
+                style="@style/ContinueEditText"
+                android:text="@string/Continue" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+

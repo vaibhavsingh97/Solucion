@@ -7,6 +7,7 @@
     tools:context="com.example.vaibhav.musicapp.MainActivity">
 
     <RelativeLayout
+        android:id="@+id/welcomeScreen_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -36,11 +37,11 @@
 
             <TextView
                 style="@style/FormTextView"
-                android:text="@string/Username" />
+                android:text="@string/username" />
 
             <EditText
                 android:id="@+id/UsernameEditTextView"
-                style="@style/UsernameEditText" />
+                style="@style/FormEditText" />
         </LinearLayout>
 
         <LinearLayout
@@ -52,7 +53,7 @@
             <TextView
                 android:id="@+id/Continue_button"
                 style="@style/ContinueEditText"
-                android:text="@string/Continue" />
+                android:text="@string/continue_text" />
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>

@@ -1,5 +1,7 @@
 package com.example.vaibhav.musicapp;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +12,7 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import butterknife.OnLongClick;
 
 public class welcome_screen_2 extends AppCompatActivity {
     @BindView(R.id.NameTextView)
@@ -38,11 +41,26 @@ public class welcome_screen_2 extends AppCompatActivity {
     public void onClick() {
         String musername = mUsernameEditTextView.getText().toString().trim().toLowerCase();
         if (musername.equals(firstName.toLowerCase())) {
-            Intent intent = new Intent(welcome_screen_2.this, MainActivity.class);
+            Intent intent = new Intent(welcome_screen_2.this, welcome_screen_3.class);
             intent.putExtra(getString(R.string.full_name), fullName);
             startActivity(intent);
         } else {
             Toast.makeText(getApplicationContext(), getString(R.string.please_enter_correct_username), Toast.LENGTH_SHORT).show();
         }
+    }
+
+    @OnLongClick(R.id.welcomeScreen_2)
+    public boolean onLongClick() {
+        final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(welcome_screen_2.this);
+        alertDialogBuilder.setMessage(getString(R.string.welcome_screen_2_summary));
+        alertDialogBuilder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+        return true;
     }
 }

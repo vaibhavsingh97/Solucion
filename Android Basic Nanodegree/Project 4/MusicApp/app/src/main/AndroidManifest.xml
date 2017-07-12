@@ -30,7 +30,9 @@
         <activity
             android:name=".welcome_screen_2"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".welcome_screen_3"></activity>
+        <activity
+            android:name=".welcome_screen_3"
+            android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>

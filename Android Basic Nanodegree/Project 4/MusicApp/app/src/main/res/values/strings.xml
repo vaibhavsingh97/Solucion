@@ -3,13 +3,19 @@
     <string name="hi_dot">Hi.</string>
     <string name="hi_exclamation">Hi! </string>
     <string name="lets_get_started">Let\'s Get Started</string>
-    <string name="Name">Name</string>
+    <string name="name">Name</string>
     <string name="full_name">full_name</string>
-    <string name="Username">Username</string>
-    <string name="Continue">Continue</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="continue_text">Continue</string>
     <string name="welcome_screen">Welcome Screen</string>
     <string name="please_enter_your_name">Please enter your name</string>
     <string name="please_enter_correct_username">Please enter correct username</string>
+    <string name="please_enter_correct_password">Please enter correct password</string>
     <string name="please_enter_your_username">Please enter your username</string>
-
+    <string name="please_enter_your_password">Please enter your password</string>
+    <string name="cancel">Cancel</string>
+    <string name="welcome_screen_1_summary">This screen ask user to enter full name. This is not full functional authentication system.\nNote: it\'s only a replica.</string>
+    <string name="welcome_screen_2_summary">This screen ask user to enter Username. This is not full functional authentication.\nNote: it\'s only a replica.</string>
+    <string name="welcome_screen_3_summary">This screen ask user to enter Password. This is not full functional authentication.\nNote: it\'s only a replica.</string>
 </resources>

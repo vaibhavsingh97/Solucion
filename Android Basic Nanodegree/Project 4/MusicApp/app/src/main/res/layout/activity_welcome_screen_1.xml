@@ -37,7 +37,7 @@
 
             <TextView
                 style="@style/FormTextView"
-                android:text="@string/Name" />
+                android:text="@string/name" />
 
             <EditText
                 android:id="@+id/NameEditTextView"
@@ -53,7 +53,7 @@
             <TextView
                 android:id="@+id/Continue_button"
                 style="@style/ContinueEditText"
-                android:text="@string/Continue" />
+                android:text="@string/continue_text" />
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>

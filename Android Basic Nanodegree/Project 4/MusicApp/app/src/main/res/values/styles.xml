@@ -38,6 +38,13 @@
         <item name="android:maxLines">1</item>
     </style>
 
+    <style name="PasswordEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
     <style name="ContinueEditText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">60dp</item>
@@ -48,10 +55,14 @@
         <item name="android:textSize">24sp</item>
     </style>
 
-    <style name="UsernameEditText">
+    <style name="ContinueImageEditText">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:inputType">textAutoComplete</item>
-        <item name="android:maxLines">1</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@color/indigo_500</item>
+        <item name="android:gravity">center</item>
+        <item name="android:src">@drawable/ic_done_black_36dp</item>
+        <item name="android:tint">@color/white</item>
     </style>
+
+
 </resources>

@@ -7,6 +7,7 @@
     tools:context="com.example.vaibhav.musicapp.MainActivity">
 
     <RelativeLayout
+        android:id="@+id/welcomeScreen_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -36,11 +37,11 @@
 
             <TextView
                 style="@style/FormTextView"
-                android:text="@string/Username" />
+                android:text="@string/password" />
 
             <EditText
-                android:id="@+id/UsernameEditTextView"
-                style="@style/UsernameEditText" />
+                android:id="@+id/PasswordEditTextView"
+                style="@style/PasswordEditText" />
         </LinearLayout>
 
         <LinearLayout
@@ -49,10 +50,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true">
 
-            <TextView
-                android:id="@+id/Continue_button"
-                style="@style/ContinueEditText"
-                android:text="@string/Continue" />
+            <ImageView
+                android:id="@+id/FinishButton"
+                style="@style/ContinueImageEditText" />
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>

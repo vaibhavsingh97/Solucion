@@ -20,11 +20,17 @@ public class about_the_app extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
+    /**
+     * This is simple intent to the another screen
+     */
     @OnClick(R.id.OpenSource)
     public void onClick() {
         startActivity(new Intent(about_the_app.this, open_source.class));
     }
 
+    /**
+     * This is setOnCLickListner method which parses URI
+     */
     @OnClick(R.id.DeveloperName)
     public void onTextClick() {
         String url = getString(R.string.personal_website_link);
@@ -33,6 +39,11 @@ public class about_the_app extends AppCompatActivity {
         startActivity(i);
     }
 
+    /**
+     * On long press this function will show information to the user
+     *
+     * @return
+     */
     @OnLongClick(R.id.AboutTheAppScreen)
     public boolean onLongClick() {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(about_the_app.this);
@@ -48,6 +59,11 @@ public class about_the_app extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * On long press this function will show information to the user
+     *
+     * @return
+     */
     @OnLongClick(R.id.OpenSource)
     public boolean onLongClick1() {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(about_the_app.this);

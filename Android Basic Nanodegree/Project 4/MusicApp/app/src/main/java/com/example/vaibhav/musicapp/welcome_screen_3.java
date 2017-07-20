@@ -5,7 +5,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,6 +37,9 @@ public class welcome_screen_3 extends AppCompatActivity {
         }
     }
 
+    /**
+     * This is a setOnClickListnerMethod which performs intent and passes information to next screen
+     */
     @OnClick(R.id.FinishButton)
     public void onClick() {
         String userPassword = mPassword.getText().toString().trim();
@@ -50,6 +52,11 @@ public class welcome_screen_3 extends AppCompatActivity {
         }
     }
 
+    /**
+     * On long press this function will show information to the user
+     *
+     * @return
+     */
     @OnLongClick(R.id.welcomeScreen_3)
     public boolean onLongClick() {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(welcome_screen_3.this);

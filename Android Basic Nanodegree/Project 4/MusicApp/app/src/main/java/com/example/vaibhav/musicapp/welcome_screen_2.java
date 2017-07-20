@@ -5,7 +5,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,6 +37,9 @@ public class welcome_screen_2 extends AppCompatActivity {
         }
     }
 
+    /**
+     * This is a setOnClickListnerMethod which performs intent and passes information to next screen
+     */
     @OnClick(R.id.Continue_button)
     public void onClick() {
         String musername = mUsernameEditTextView.getText().toString().trim().toLowerCase();
@@ -50,6 +52,11 @@ public class welcome_screen_2 extends AppCompatActivity {
         }
     }
 
+    /**
+     * On long press this function will show information to the user
+     *
+     * @return
+     */
     @OnLongClick(R.id.welcomeScreen_2)
     public boolean onLongClick() {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(welcome_screen_2.this);

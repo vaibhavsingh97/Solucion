@@ -17,6 +17,11 @@ public class song_play extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
+    /**
+     * On long press this function will show information to the user
+     *
+     * @return
+     */
     @OnLongClick(R.id.PlayingScreen1)
     public boolean onLongClick1() {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(song_play.this);
@@ -32,6 +37,11 @@ public class song_play extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * On long press this function will show information to the user
+     *
+     * @return
+     */
     @OnLongClick(R.id.PlayingScreen2)
     public boolean onLongClick2() {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(song_play.this);

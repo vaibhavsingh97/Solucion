@@ -24,6 +24,9 @@ public class welcome_screen_1 extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
+    /**
+     * This is a setOnClickListnerMethod which performs intent and passes information to next screen
+     */
     @OnClick(R.id.Continue_button)
     public void onClick() {
         String full_name = mNameEditText.getText().toString().trim();
@@ -36,6 +39,11 @@ public class welcome_screen_1 extends AppCompatActivity {
         }
     }
 
+    /**
+     * On long press this function will show information to the user
+     *
+     * @return
+     */
     @OnLongClick(R.id.welcomeScreen_1)
     public boolean onLongClick() {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(welcome_screen_1.this);

@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -59,18 +58,29 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method set visibility to none and vice versa
+     *
+     * @param v
+     */
     @OnClick(R.id.PlayButton)
     public void onPlayClick(View v) {
         v.setVisibility(View.GONE);
         mPauseButton.setVisibility(View.VISIBLE);
     }
 
+    /**
+     * This is setOnCLickListner method performing intent
+     */
     @OnClick(R.id.PauseButton)
     public void onPauseClick(View v) {
         v.setVisibility(View.GONE);
         mPlayButton.setVisibility(View.VISIBLE);
     }
 
+    /**
+     * This is setOnCLickListner method performing intent
+     */
     @OnClick(R.id.Album1)
     public void onAlbum1Click() {
         Intent intent = new Intent(MainActivity.this, SongList.class);
@@ -79,6 +89,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * This is setOnCLickListner method performing intent
+     */
     @OnClick(R.id.Album2)
     public void onAlbum2Click() {
         Intent intent = new Intent(MainActivity.this, SongList.class);
@@ -87,6 +100,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * This is setOnCLickListner method performing intent
+     */
     @OnClick(R.id.Album3)
     public void onAlbum3Click() {
         Intent intent = new Intent(MainActivity.this, SongList.class);
@@ -95,6 +111,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * This is setOnCLickListner method performing intent
+     */
     @OnClick(R.id.Album4)
     public void onAlbum4Click() {
         Intent intent = new Intent(MainActivity.this, SongList.class);
@@ -103,6 +122,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * On long press this function will show information to the user
+     *
+     * @return
+     */
     @OnLongClick(R.id.MainScreen)
     public boolean onLongClick() {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
@@ -118,6 +142,11 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * On long press this function will show information to the user
+     *
+     * @return
+     */
     @OnLongClick(R.id.BottomBar)
     public boolean onLongClick1() {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
@@ -145,14 +174,14 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.home:
                 onBackPressed();
-                return  true;
+                return true;
 
             case R.id.action_settings:
                 startActivity(new Intent(MainActivity.this, about_the_app.class));
                 return true;
 
             case R.id.action_payment:
-                startActivity(new Intent(MainActivity.this,payment.class));
+                startActivity(new Intent(MainActivity.this, payment.class));
                 return true;
 
 

@@ -20,6 +20,9 @@ public class open_source extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
+    /**
+     * This is setOnClickListner method performing intent to parse URI
+     */
     @OnClick(R.id.ButterknifeLink)
     public void onClick() {
         String url = getString(R.string.butterknife_link);
@@ -27,6 +30,12 @@ public class open_source extends AppCompatActivity {
         i.setData(Uri.parse(url));
         startActivity(i);
     }
+
+    /**
+     * On long press this function will show information to the user
+     *
+     * @return
+     */
     @OnLongClick(R.id.OpenSourceScreen)
     public boolean onLongClick() {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(open_source.this);

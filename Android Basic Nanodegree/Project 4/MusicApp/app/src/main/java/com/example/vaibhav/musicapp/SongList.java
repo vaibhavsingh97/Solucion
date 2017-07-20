@@ -65,6 +65,11 @@ public class SongList extends AppCompatActivity implements PopupMenu.OnMenuItemC
         mSongTimeTextView6.setText(randomTime());
     }
 
+    /**
+     * This method is used to calculate random time and return to the user interface
+     *
+     * @return String in form of 00:00
+     */
     public String randomTime() {
         Random random = new Random();
         int minutes = random.nextInt(10 - 1) + 1;
@@ -72,12 +77,22 @@ public class SongList extends AppCompatActivity implements PopupMenu.OnMenuItemC
         return String.valueOf(minutes) + ":" + String.valueOf(seconds);
     }
 
+    /**
+     * This method set visibility to none and vice versa
+     *
+     * @param v
+     */
     @OnClick(R.id.PlayButton)
     public void onPlayClick(View v) {
         v.setVisibility(View.GONE);
         mPauseButton.setVisibility(View.VISIBLE);
     }
 
+    /**
+     * This method set visibility to none and vice versa
+     *
+     * @param v
+     */
     @OnClick(R.id.PauseButton)
     public void onPauseClick(View v) {
         v.setVisibility(View.GONE);
@@ -89,6 +104,11 @@ public class SongList extends AppCompatActivity implements PopupMenu.OnMenuItemC
         startActivity(new Intent(SongList.this, song_play.class));
     }
 
+    /**
+     * On long press this function will show information to the user
+     *
+     * @return
+     */
     @OnLongClick(R.id.SongListScreen)
     public boolean onLongClick() {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SongList.this);
@@ -104,6 +124,11 @@ public class SongList extends AppCompatActivity implements PopupMenu.OnMenuItemC
         return true;
     }
 
+    /**
+     * On long press this function will show information to the user
+     *
+     * @return
+     */
     @OnLongClick(R.id.BottomBar)
     public boolean onLongClick1() {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SongList.this);
@@ -119,6 +144,11 @@ public class SongList extends AppCompatActivity implements PopupMenu.OnMenuItemC
         return true;
     }
 
+    /**
+     * This is a setOnClickListner method which invokes popup to inflate menu
+     *
+     * @param v
+     */
     @OnClick(R.id.MoreSettings1)
     public void showMenu1(View v) {
         PopupMenu popup = new PopupMenu(this, v);
@@ -127,6 +157,11 @@ public class SongList extends AppCompatActivity implements PopupMenu.OnMenuItemC
         popup.show();
     }
 
+    /**
+     * This is a setOnClickListner method which invokes popup to inflate menu
+     *
+     * @param v
+     */
     @OnClick(R.id.MoreSettings2)
     public void showMenu2(View v) {
         PopupMenu popup = new PopupMenu(this, v);
@@ -135,6 +170,11 @@ public class SongList extends AppCompatActivity implements PopupMenu.OnMenuItemC
         popup.show();
     }
 
+    /**
+     * This is a setOnClickListner method which invokes popup to inflate menu
+     *
+     * @param v
+     */
     @OnClick(R.id.MoreSettings3)
     public void showMenu3(View v) {
         PopupMenu popup = new PopupMenu(this, v);
@@ -143,6 +183,11 @@ public class SongList extends AppCompatActivity implements PopupMenu.OnMenuItemC
         popup.show();
     }
 
+    /**
+     * This is a setOnClickListner method which invokes popup to inflate menu
+     *
+     * @param v
+     */
     @OnClick(R.id.MoreSettings4)
     public void showMenu4(View v) {
         PopupMenu popup = new PopupMenu(this, v);
@@ -151,6 +196,11 @@ public class SongList extends AppCompatActivity implements PopupMenu.OnMenuItemC
         popup.show();
     }
 
+    /**
+     * This is a setOnClickListner method which invokes popup to inflate menu
+     *
+     * @param v
+     */
     @OnClick(R.id.MoreSettings5)
     public void showMenu5(View v) {
         PopupMenu popup = new PopupMenu(this, v);
@@ -159,6 +209,11 @@ public class SongList extends AppCompatActivity implements PopupMenu.OnMenuItemC
         popup.show();
     }
 
+    /**
+     * This is a setOnClickListner method which invokes popup to inflate menu
+     *
+     * @param v
+     */
     @OnClick(R.id.MoreSettings6)
     public void showMenu6(View v) {
         PopupMenu popup = new PopupMenu(this, v);
@@ -167,6 +222,9 @@ public class SongList extends AppCompatActivity implements PopupMenu.OnMenuItemC
         popup.show();
     }
 
+    /**
+     * This is a setOnClickListner method which performing intent
+     */
     @OnClick(R.id.Song_1)
     public void onPlaySong1() {
         startActivity(new Intent(SongList.this, song_play.class));

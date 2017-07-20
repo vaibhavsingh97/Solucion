@@ -17,6 +17,11 @@ public class payment extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
+    /**
+     * On long press this function will show information to the user
+     *
+     * @return
+     */
     @OnLongClick(R.id.PaymentScreen)
     public boolean onLongClick1() {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(payment.this);

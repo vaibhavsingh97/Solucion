@@ -161,4 +161,78 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:tint">@color/white</item>
     </style>
+    <!--Style for About The app screen-->
+    <style name="AppIcon">
+        <item name="android:layout_width">@dimen/layout_width_200dp</item>
+        <item name="android:layout_height">@dimen/layout_height_200dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_50dp</item>
+    </style>
+
+    <style name="AppName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/text_size_45sp</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_8dp</item>
+    </style>
+
+    <style name="AppVersion" parent="AppName">
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="DevlopedBy">
+        <item name="android:layout_width">@dimen/layout_width_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/margin_end_4dp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+    </style>
+
+    <style name="DevloperName">
+        <item name="android:layout_width">@dimen/layout_width_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@android:color/holo_blue_light</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+    </style>
+
+    <style name="OpenSource">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/padding_16dp</item>
+        <item name="android:textColor">@color/indigo_500</item>
+        <item name="android:textSize">@dimen/text_size_20sp</item>
+    </style>
+    <!--Style for Opensource screen-->
+    <style name="OpenSourceLibraryName" parent="OpenSourceLibraryLink">
+        <item name="android:textColor">@android:color/primary_text_light</item>
+        <item name="android:textSize">@dimen/text_size_24sp</item>
+    </style>
+
+    <style name="OpenSourceLibraryLink">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingLeft">@dimen/padding_left_16dp</item>
+        <item name="android:paddingTop">@dimen/padding_top_8dp</item>
+        <item name="android:textColor">@android:color/holo_blue_light</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+    </style>
+
+    <style name="OpenSourceLibraryDescription" parent="OpenSourceLibraryLink">
+        <item name="android:clickable">false</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <!--Style for Playing Song screen-->
+    <style name="PlayingScreenButtons">
+        <item name="android:layout_width">@dimen/layout_width_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding_16dp</item>
+    </style>
 </resources>

@@ -84,10 +84,30 @@ public class SongList extends AppCompatActivity implements PopupMenu.OnMenuItemC
         mPlayButton.setVisibility(View.VISIBLE);
     }
 
+    @OnClick(R.id.Play)
+    public void onPlay() {
+        startActivity(new Intent(SongList.this, song_play.class));
+    }
+
     @OnLongClick(R.id.SongListScreen)
     public boolean onLongClick() {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SongList.this);
-        alertDialogBuilder.setMessage(getString(R.string.main_screen_summary));
+        alertDialogBuilder.setMessage(getString(R.string.song_list_screen_summary));
+        alertDialogBuilder.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+        return true;
+    }
+
+    @OnLongClick(R.id.BottomBar)
+    public boolean onLongClick1() {
+        final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SongList.this);
+        alertDialogBuilder.setMessage(getString(R.string.song_list_screen_summary));
         alertDialogBuilder.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -147,6 +167,36 @@ public class SongList extends AppCompatActivity implements PopupMenu.OnMenuItemC
         popup.show();
     }
 
+    @OnClick(R.id.Song_1)
+    public void onPlaySong1() {
+        startActivity(new Intent(SongList.this, song_play.class));
+    }
+
+    @OnClick(R.id.Song_2)
+    public void onPlaySong2() {
+        startActivity(new Intent(SongList.this, song_play.class));
+    }
+
+    @OnClick(R.id.Song_1)
+    public void onPlaySong3() {
+        startActivity(new Intent(SongList.this, song_play.class));
+    }
+
+    @OnClick(R.id.Song_1)
+    public void onPlaySong4() {
+        startActivity(new Intent(SongList.this, song_play.class));
+    }
+
+    @OnClick(R.id.Song_1)
+    public void onPlaySong5() {
+        startActivity(new Intent(SongList.this, song_play.class));
+    }
+
+    @OnClick(R.id.Song_1)
+    public void onPlaySong6() {
+        startActivity(new Intent(SongList.this, song_play.class));
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -157,10 +207,20 @@ public class SongList extends AppCompatActivity implements PopupMenu.OnMenuItemC
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.home:
+                onBackPressed();
+                return true;
+
             case R.id.action_settings:
+                startActivity(new Intent(SongList.this, about_the_app.class));
+                return true;
+
+            case R.id.action_payment:
+                startActivity(new Intent(SongList.this, payment.class));
                 return true;
 
             case R.id.action_search:
+                Toast.makeText(getApplicationContext(), getString(R.string.you_have_selected) + " " + getString(R.string.search_button), Toast.LENGTH_SHORT).show();
                 return true;
 
             default:

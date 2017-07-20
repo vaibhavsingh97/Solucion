@@ -28,4 +28,10 @@
     <dimen name="margin_left_32dp">32dp</dimen>
     <dimen name="margin_bottom_70dp">70dp</dimen>
     <dimen name="margin_top_150dp">150dp</dimen>
+    <dimen name="layout_height_1dp">1dp</dimen>
+    <dimen name="margin_end_4dp">4dp</dimen>
+    <dimen name="layout_width_200dp">200dp</dimen>
+    <dimen name="layout_height_200dp">200dp</dimen>
+    <dimen name="margin_top_50dp">50dp</dimen>
+    <dimen name="margin_top_8dp">8dp</dimen>
 </resources>

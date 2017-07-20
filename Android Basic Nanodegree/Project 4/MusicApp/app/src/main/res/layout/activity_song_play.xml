@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.vaibhav.musicapp.song_play">
+
+    <LinearLayout
+        android:id="@+id/PlayingScreen1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/album_art_1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/PlayingScreen2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_3dp"
+            android:progress="89"
+            android:progressBackgroundTint="@color/colorPrimary"
+            android:progressTint="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/PlayingScreenButtons"
+                android:layout_weight="1"
+                android:src="@drawable/ic_repeat_black_36dp" />
+
+            <ImageView
+                style="@style/PlayingScreenButtons"
+                android:layout_weight="1"
+                android:src="@drawable/ic_skip_previous_black_36dp" />
+
+            <ImageView
+                style="@style/PlayingScreenButtons"
+                android:layout_weight="1"
+                android:src="@drawable/ic_pause_black_36dp" />
+
+            <ImageView
+                style="@style/PlayingScreenButtons"
+                android:layout_weight="1"
+                android:src="@drawable/ic_skip_next_black_36dp" />
+
+            <ImageView
+                style="@style/PlayingScreenButtons"
+                android:layout_weight="1"
+                android:src="@drawable/ic_shuffle_black_36dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/PlayingScreenButtons"
+                android:layout_weight="0.4"
+                android:src="@drawable/ic_volume_down_black_36dp" />
+
+            <SeekBar
+                android:layout_width="@dimen/layout_width_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_16dp" />
+
+            <ImageView
+                style="@style/PlayingScreenButtons"
+                android:layout_weight="0.4"
+                android:src="@drawable/ic_volume_up_black_36dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -142,10 +143,21 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.home:
+                onBackPressed();
+                return  true;
+
             case R.id.action_settings:
+                startActivity(new Intent(MainActivity.this, about_the_app.class));
                 return true;
 
+            case R.id.action_payment:
+                startActivity(new Intent(MainActivity.this,payment.class));
+                return true;
+
+
             case R.id.action_search:
+                Toast.makeText(getApplicationContext(), getString(R.string.you_have_selected) + " " + getString(R.string.search_button), Toast.LENGTH_SHORT).show();
                 return true;
 
             default:

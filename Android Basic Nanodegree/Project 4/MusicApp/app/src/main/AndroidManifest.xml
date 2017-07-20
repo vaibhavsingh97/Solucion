@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
 
@@ -33,6 +34,26 @@
             android:name=".welcome_screen_3"
             android:windowSoftInputMode="adjustPan" />
         <activity android:name=".SongList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.vaibhav.musicapp.MainActivity" />
+        </activity>
+        <activity android:name=".about_the_app">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.vaibhav.musicapp.MainActivity" />
+        </activity>
+        <activity android:name=".open_source">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.vaibhav.musicapp.about_the_app" />
+        </activity>
+        <activity android:name=".song_play">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.vaibhav.musicapp.SongList" />
+        </activity>
+        <activity android:name=".payment">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.vaibhav.musicapp.MainActivity" />

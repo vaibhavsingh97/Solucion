@@ -27,6 +27,8 @@
     <string name="songs_48">48 Songs</string>
     <string name="albums_866">866 Albums</string>
     <string name="search">Search</string>
+    <string name="payments">Payments</string>
+    <string name="payment_gateway">Payment Gateway</string>
     <string name="about_the_app">About the App</string>
     <string name="one">1.</string>
     <string name="two">2.</string>
@@ -53,9 +55,34 @@
     <string name="content_description_button">This is a play/pause button.</string>
     <string name="content_description_play_button">This is a play button.</string>
     <string name="content_description_more_setting_button">This button opens more settings for the listed song.</string>
+    <string name="content_description_app_icon">This is an app icon</string>
+    <string name="search_button">Search Button</string>
+    <string name="version_1_0">Version 1.0.0</string>
+    <string name="developed_by">Developed by</string>
+    <string name="vaibhav_singh">Vaibhav Singh</string>
+    <string name="personal_website_link">https://vaibhavsingh97.me</string>
+    <string name="open_source_license">Open Source License</string>
     <string name="welcome_screen_1_summary">This screen ask user to enter full name. This is not full functional authentication system.\nNote: it\'s only a replica.</string>
     <string name="welcome_screen_2_summary">This screen ask user to enter Username. This is not full functional authentication.\nNote: it\'s only a replica.</string>
     <string name="welcome_screen_3_summary">This screen ask user to enter Password. This is not full functional authentication.\nNote: it\'s only a replica.</string>
     <string name="main_screen_summary">This screen shows information about available albums and list the albums in cards.</string>
+    <string name="song_list_screen_summary">This screen shows list of songs available in the albums.</string>
+    <string name="about_the_app_summary">This screen shows information about the app.</string>
+    <string name="open_source_summary">This screen shows information about open source library used in the app.</string>
+    <string name="payment_screen_summary">This screen shows information about payment service used in the app.</string>
+    <string name="playing_screen_summary">This screen shows playing song information.</string>
     <string name="welcome_to_the_app">Welcome to the Music App. This App customized for best user experience.</string>
+    <string name="butterknife">Butterknife</string>
+    <string name="butterknife_link">https://github.com/JakeWharton/butterknife</string>
+    <string name="butterknife_description">Copyright 2013 Jake Wharton\n\nLicensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="payment_description">1. The customer selects the Buy with Android Pay button. Using the Google API, the merchant requests the Masked Wallet object\n\n
+    2. The customer confirms the payment. Using the Google API, the merchant requests the Full Wallet object\n\n
+    3. Google requests the payment network token and cryptogram from the payment network\n\n
+    4. The payment network sends the payment network token and the cryptogram to Google.\n\n
+    5. Google creates an encrypted payload using the public key supplied in the Full Wallet request and includes it in the Google API response.\n\n
+    6. Android Pay App— call back returns the encrypted payment data to the merchant server.onActivityResult()\n\n
+    7. The merchant chooses the Merchant decryption option or the CyberSource decryption option.\n\n
+    8. CyberSource returns the authorization response to the merchant.\n\n
+    9. The merchant returns the authorization result to the Android app.\n\n
+    10.The Android app displays the confirmation or decline message to the customer.</string>
 </resources>

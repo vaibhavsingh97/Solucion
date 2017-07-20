@@ -8,6 +8,11 @@
         android:icon="@drawable/ic_search_white_24dp"
         android:title="@string/search"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_payment"
+        android:icon="@drawable/ic_payment_white_24dp"
+        android:title="@string/payments"
+        app:showAsAction="ifRoom" />
 
     <!-- Settings, should always be in the overflow -->
     <item

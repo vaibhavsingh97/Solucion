@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vaibhav.musicapp.open_source">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/OpenSourceScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/OpenSourceLibraryName"
+                android:text="@string/butterknife" />
+
+            <TextView
+                android:id="@+id/ButterknifeLink"
+                style="@style/OpenSourceLibraryLink"
+                android:text="@string/butterknife_link" />
+
+            <TextView
+                style="@style/OpenSourceLibraryDescription"
+                android:text="@string/butterknife_description" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

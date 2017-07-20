@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
 
@@ -33,6 +32,11 @@
         <activity
             android:name=".welcome_screen_3"
             android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".SongList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.vaibhav.musicapp.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

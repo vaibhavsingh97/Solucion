@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vaibhav.musicapp.SongList">
+
+    <ScrollView
+        android:id="@+id/SongListScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_70dp"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gun_powder">
+
+            <RelativeLayout
+                android:id="@+id/Banner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/content_description_banner"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/music_background_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/marquine_gradient" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/margin_bottom_16dp"
+                    android:layout_marginStart="@dimen/margin_left_32dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/BannerAlbumName"
+                            style="@style/BannerAlbumName" />
+
+                        <TextView
+                            android:id="@+id/BannerAlbumTotalSongs"
+                            style="@style/BannerTotalAlbums" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                style="@style/PlayButton"
+                android:contentDescription="@string/content_description_play_button"
+                android:src="@drawable/ic_play_circle_filled_black_48dp" />
+
+            <LinearLayout
+                android:id="@+id/Song_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Banner"
+                android:layout_marginTop="@dimen/margin_top_30dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_16dp">
+
+                <TextView
+                    style="@style/SongNumber"
+                    android:layout_weight="0.2"
+                    android:text="@string/one" />
+
+                <TextView
+                    style="@style/SongName"
+                    android:layout_weight="1"
+                    android:text="@string/dreaming" />
+
+                <TextView
+                    android:id="@+id/SongTime1"
+                    style="@style/SongTime"
+                    android:layout_weight="0.2" />
+
+                <ImageView
+                    android:id="@+id/MoreSettings1"
+                    style="@style/MoreSettings"
+                    android:layout_weight="0.2"
+                    android:contentDescription="@string/content_description_more_setting_button"
+                    android:src="@drawable/ic_more_vert_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Song_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Song_1"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/SongNumber"
+                    android:layout_weight="0.2"
+                    android:text="@string/two" />
+
+                <TextView
+                    style="@style/SongName"
+                    android:layout_weight="1"
+                    android:text="@string/real_and_true" />
+
+                <TextView
+                    android:id="@+id/SongTime2"
+                    style="@style/SongTime"
+                    android:layout_weight="0.2" />
+
+                <ImageView
+                    android:id="@+id/MoreSettings2"
+                    style="@style/MoreSettings"
+                    android:layout_weight="0.2"
+                    android:contentDescription="@string/content_description_more_setting_button"
+                    android:src="@drawable/ic_more_vert_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Song_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Song_2"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/SongNumber"
+                    android:layout_weight="0.2"
+                    android:text="@string/three" />
+
+                <TextView
+                    style="@style/SongName"
+                    android:layout_weight="1"
+                    android:text="@string/within_my_heart" />
+
+                <TextView
+                    android:id="@+id/SongTime3"
+                    style="@style/SongTime"
+                    android:layout_weight="0.2" />
+
+                <ImageView
+                    android:id="@+id/MoreSettings3"
+                    style="@style/MoreSettings"
+                    android:layout_weight="0.2"
+                    android:contentDescription="@string/content_description_more_setting_button"
+                    android:src="@drawable/ic_more_vert_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Song_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Song_3"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/SongNumber"
+                    android:layout_weight="0.2"
+                    android:text="@string/four" />
+
+                <TextView
+                    style="@style/SongName"
+                    android:layout_weight="1"
+                    android:text="@string/more_than_yesterday" />
+
+                <TextView
+                    android:id="@+id/SongTime4"
+                    style="@style/SongTime"
+                    android:layout_weight="0.2" />
+
+                <ImageView
+                    android:id="@+id/MoreSettings4"
+                    style="@style/MoreSettings"
+                    android:layout_weight="0.2"
+                    android:contentDescription="@string/content_description_more_setting_button"
+                    android:src="@drawable/ic_more_vert_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Song_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Song_4"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/SongNumber"
+                    android:layout_weight="0.2"
+                    android:text="@string/five" />
+
+                <TextView
+                    style="@style/SongName"
+                    android:layout_weight="1"
+                    android:text="@string/calling" />
+
+                <TextView
+                    android:id="@+id/SongTime5"
+                    style="@style/SongTime"
+                    android:layout_weight="0.2" />
+
+                <ImageView
+                    android:id="@+id/MoreSettings5"
+                    style="@style/MoreSettings"
+                    android:layout_weight="0.2"
+                    android:contentDescription="@string/content_description_more_setting_button"
+                    android:src="@drawable/ic_more_vert_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Song_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Song_5"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/SongNumber"
+                    android:layout_weight="0.2"
+                    android:text="@string/six" />
+
+                <TextView
+                    style="@style/SongName"
+                    android:layout_weight="1"
+                    android:text="@string/two_faced" />
+
+                <TextView
+                    android:id="@+id/SongTime6"
+                    style="@style/SongTime"
+                    android:layout_weight="0.2" />
+
+                <ImageView
+                    android:id="@+id/MoreSettings6"
+                    style="@style/MoreSettings"
+                    android:layout_weight="0.2"
+                    android:contentDescription="@string/content_description_more_setting_button"
+                    android:src="@drawable/ic_more_vert_black_24dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_3dp"
+            android:progress="89"
+            android:progressBackgroundTint="@color/colorPrimary"
+            android:progressTint="@color/colorAccent" />
+
+        <LinearLayout
+            android:id="@+id/BottomPlayBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/BottomPlayBarAlbumArt"
+                android:layout_weight="0.24"
+                android:contentDescription="@string/content_description_album_art" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/BottomPlayBarSongName"
+                    android:text="@string/love_to_dance" />
+
+                <TextView
+                    style="@style/BottomPlayBarSongReleaseCompany"
+                    android:text="@string/pinkinlark_llc" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/PlayButton"
+                style="@style/BottomPlayBarPlayButton"
+                android:layout_weight="1"
+                android:contentDescription="@string/content_description_button"
+                android:src="@drawable/ic_play_circle_filled_black_24dp" />
+
+            <ImageView
+                android:id="@+id/PauseButton"
+                style="@style/BottomPlayBarPlayButton"
+                android:layout_weight="1"
+                android:contentDescription="@string/content_description_button"
+                android:src="@drawable/ic_pause_circle_filled_black_24dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

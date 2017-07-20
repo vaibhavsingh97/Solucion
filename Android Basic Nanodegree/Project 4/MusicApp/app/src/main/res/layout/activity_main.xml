@@ -1,10 +1,268 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.vaibhav.musicapp.MainActivity">
-    
 
-</ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_70dp"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/MainScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/charade">
+
+            <RelativeLayout
+                android:id="@+id/Banner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/black_gradient"
+                    android:contentDescription="@string/content_description_banner"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/music_background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/black_gradient" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_left_32dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="@dimen/layout_width_96dp"
+                        android:layout_height="@dimen/layout_height_96dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/content_description_profile"
+                        android:src="@drawable/profile" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/BannerProfileName"
+                            style="@style/BannerProfileName" />
+
+                        <TextView
+                            style="@style/BannerTotalAlbums"
+                            android:text="@string/albums_866" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Banner"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/Album1"
+                    android:layout_width="@dimen/layout_width_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_4dp">
+
+                    <ImageView
+                        style="@style/AlbumArt"
+                        android:src="@drawable/album_art_1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gun_powder"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/AlbumName1"
+                            style="@style/AlbumName"
+                            android:text="@string/the_rockers" />
+
+                        <TextView
+                            android:id="@+id/AlbumTotalSongs1"
+                            style="@style/AlbumContent"
+                            android:text="@string/songs_102" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Album2"
+                    android:layout_width="@dimen/layout_width_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_4dp">
+
+                    <ImageView
+                        style="@style/AlbumArt"
+                        android:src="@drawable/album_art_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gun_powder"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/AlbumName2"
+                            style="@style/AlbumName"
+                            android:text="@string/dumped_girl" />
+
+                        <TextView
+                            android:id="@+id/AlbumTotalSongs2"
+                            style="@style/AlbumContent"
+                            android:text="@string/songs_42" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_layout_1"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/Album3"
+                    android:layout_width="@dimen/layout_width_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_4dp">
+
+                    <ImageView
+                        style="@style/AlbumArt"
+                        android:src="@drawable/album_art_3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gun_powder"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/AlbumName3"
+                            style="@style/AlbumName"
+                            android:text="@string/the_national" />
+
+                        <TextView
+                            android:id="@+id/AlbumTotalSongs3"
+                            style="@style/AlbumContent"
+                            android:text="@string/songs_23" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Album4"
+                    android:layout_width="@dimen/layout_width_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_4dp">
+
+                    <ImageView
+                        style="@style/AlbumArt"
+                        android:src="@drawable/album_art_4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gun_powder"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/AlbumName4"
+                            style="@style/AlbumName"
+                            android:text="@string/the_range" />
+
+                        <TextView
+                            android:id="@+id/AlbumTotalSongs4"
+                            style="@style/AlbumContent"
+                            android:text="@string/songs_48" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/BottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_3dp"
+            android:progress="89"
+            android:progressBackgroundTint="@color/colorPrimary"
+            android:progressTint="@color/colorAccent" />
+
+        <LinearLayout
+            android:id="@+id/BottomPlayBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/BottomPlayBarAlbumArt"
+                android:layout_weight="0.24" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/BottomPlayBarSongName"
+                    android:text="@string/love_to_dance" />
+
+                <TextView
+                    style="@style/BottomPlayBarSongReleaseCompany"
+                    android:text="@string/pinkinlark_llc" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/PlayButton"
+                style="@style/BottomPlayBarPlayButton"
+                android:layout_weight="1"
+                android:src="@drawable/ic_play_circle_filled_black_24dp" />
+
+            <ImageView
+                android:id="@+id/PauseButton"
+                style="@style/BottomPlayBarPlayButton"
+                android:layout_weight="1"
+                android:src="@drawable/ic_pause_circle_filled_black_24dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/one"
+        android:title="@string/play" />
+    <item
+        android:id="@+id/two"
+        android:title="@string/play_next" />
+    <item
+        android:id="@+id/three"
+        android:title="@string/add_to_queue" />
+    <item
+        android:id="@+id/four"
+        android:title="@string/add_to_playlist" />
+    <item
+        android:id="@+id/five"
+        android:title="@string/use_as_ringtone" />
+    <item
+        android:id="@+id/six"
+        android:title="@string/delete" />
+</menu>

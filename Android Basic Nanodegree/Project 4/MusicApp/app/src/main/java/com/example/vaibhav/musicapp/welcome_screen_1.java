@@ -40,7 +40,7 @@ public class welcome_screen_1 extends AppCompatActivity {
     public boolean onLongClick() {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(welcome_screen_1.this);
         alertDialogBuilder.setMessage(getString(R.string.welcome_screen_1_summary));
-        alertDialogBuilder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();

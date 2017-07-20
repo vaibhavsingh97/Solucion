@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="text_size_45sp">45sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
     <dimen name="text_size_24sp">24sp</dimen>
     <dimen name="text_size_28sp">28sp</dimen>
-    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_45sp">45sp</dimen>
+    <dimen name="layout_width_0dp">0dp</dimen>
     <dimen name="layout_height_0dp">0dp</dimen>
+    <dimen name="layout_height_3dp">3dp</dimen>
+    <dimen name="layout_height_60dp">60dp</dimen>
+    <dimen name="layout_width_70dp">70dp</dimen>
+    <dimen name="layout_height_70dp">70dp</dimen>
+    <dimen name="layout_width_96dp">96dp</dimen>
+    <dimen name="layout_height_96dp">96dp</dimen>
+    <dimen name="layout_height_140dp">140dp</dimen>
+    <dimen name="padding_left_12dp">12dp</dimen>
+    <dimen name="padding_16dp">16dp</dimen>
+    <dimen name="padding_top_16dp">16dp</dimen>
+    <dimen name="padding_left_16dp">16dp</dimen>
+    <dimen name="padding_top_8dp">8dp</dimen>
+    <dimen name="padding_bottom_8dp">8dp</dimen>
+    <dimen name="padding_4dp">4dp</dimen>
+    <dimen name="padding_top_4dp">4dp</dimen>
     <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_bottom_16dp">16dp</dimen>
+    <dimen name="margin_top_30dp">30dp</dimen>
+    <dimen name="margin_left_32dp">32dp</dimen>
+    <dimen name="margin_bottom_70dp">70dp</dimen>
+    <dimen name="margin_top_150dp">150dp</dimen>
 </resources>

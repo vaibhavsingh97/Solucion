@@ -4,7 +4,7 @@
 
 The app implements the structure of user's personal library.
 
-<!-- [Project Review](https://review.udacity.com/#!/reviews/591156/shared) -->
+[Project Review](https://review.udacity.com/#!/reviews/622319/shared)
 
 <p align="center">
   <img src="Demo/demo.gif"  width="350"/>

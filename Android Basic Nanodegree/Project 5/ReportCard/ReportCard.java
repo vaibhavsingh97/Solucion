@@ -2,11 +2,20 @@ package com.example.vaibhav.reportcard;
 
 import java.util.ArrayList;
 
+import static android.R.attr.min;
+
 /**
  * Created by vaibhav on 7/23/17.
  */
 
 public class ReportCard {
+    private static final int MinusOne = -1;
+    private static final int zero = 0;
+    private static final int one = 1;
+    private static final int two = 2;
+    private static final int three = 3;
+    private static final int four = 4;
+    private static final int five = 5;
     /* Storing student name in mStudentName */
     private String mStudentName;
     /* Storing university name in mUniversityName */
@@ -49,19 +58,19 @@ public class ReportCard {
         this.mYear = year;
         this.mSemester = semester;
 
-        mSubjects.add(0, "Physics");
-        mSubjects.add(1, "Chemistry");
-        mSubjects.add(2, "Math");
-        mSubjects.add(3, "English");
-        mSubjects.add(4, "Computer Science");
-        mSubjects.add(5, "Physical Education");
+        mSubjects.add(zero, "Physics");
+        mSubjects.add(one, "Chemistry");
+        mSubjects.add(two, "Math");
+        mSubjects.add(three, "English");
+        mSubjects.add(four, "Computer Science");
+        mSubjects.add(five, "Physical Education");
 
-        mScores.add(0, physicsScore);
-        mScores.add(1, chemistryScore);
-        mScores.add(2, mathScore);
-        mScores.add(3, englishScore);
-        mScores.add(4, computerScienceScore);
-        mScores.add(5, physicalEducationScore);
+        mScores.add(zero, physicsScore);
+        mScores.add(one, chemistryScore);
+        mScores.add(two, mathScore);
+        mScores.add(three, englishScore);
+        mScores.add(four, computerScienceScore);
+        mScores.add(five, physicalEducationScore);
     }
 
     /**
@@ -115,7 +124,11 @@ public class ReportCard {
      * @param year is the year of study
      */
     public void setYearDetails(int year) {
-        this.mYear = year;
+        if (year < zero) {
+            this.mYear = mYear * MinusOne;
+        } else {
+            this.mYear = year;
+        }
     }
 
     /**
@@ -142,7 +155,7 @@ public class ReportCard {
      * @return score of physics
      */
     public double getPhysicsScore() {
-        return mScores.get(0);
+        return mScores.get(zero);
     }
 
     /**
@@ -151,7 +164,11 @@ public class ReportCard {
      * @param score is the score of physics subject
      */
     public void setPhysicsScore(double score) {
-        mScores.set(0, score);
+        if (score < zero) {
+            mScores.set(zero, score * MinusOne);
+        } else {
+            mScores.set(zero, score);
+        }
     }
 
     /**
@@ -160,7 +177,7 @@ public class ReportCard {
      * @return score of chemistry subject
      */
     public double getChemistryScore() {
-        return mScores.get(1);
+        return mScores.get(one);
     }
 
     /**
@@ -169,7 +186,11 @@ public class ReportCard {
      * @param score is the score of Chemistry subject
      */
     public void setChemistryScore(double score) {
-        mScores.set(1, score);
+        if (score < zero) {
+            mScores.set(one, score * MinusOne);
+        } else {
+            mScores.set(one, score);
+        }
     }
 
     /**
@@ -178,7 +199,7 @@ public class ReportCard {
      * @return score of the math subject
      */
     public double getMathScore() {
-        return mScores.get(2);
+        return mScores.get(two);
     }
 
     /**
@@ -187,7 +208,11 @@ public class ReportCard {
      * @param score is the score of Math subject
      */
     public void setMathScore(double score) {
-        mScores.set(2, score);
+        if (score < zero) {
+            mScores.set(two, score * MinusOne);
+        } else {
+            mScores.set(two, score);
+        }
     }
 
     /**
@@ -196,7 +221,7 @@ public class ReportCard {
      * @return score of English Subject
      */
     public double getEnglishScore() {
-        return mScores.get(3);
+        return mScores.get(three);
     }
 
     /**
@@ -205,7 +230,11 @@ public class ReportCard {
      * @param score is the score of English Subject
      */
     public void setEnglishScore(double score) {
-        mScores.set(3, score);
+        if (score < zero) {
+            mScores.set(three, score * MinusOne);
+        } else {
+            mScores.set(three, score);
+        }
     }
 
     /**
@@ -214,7 +243,7 @@ public class ReportCard {
      * @return the score of Computer Science subject
      */
     public double getComputerScienceScore() {
-        return mScores.get(4);
+        return mScores.get(four);
     }
 
     /**
@@ -223,7 +252,11 @@ public class ReportCard {
      * @param score of Computer science subject
      */
     public void setComputerScienceScore(double score) {
-        mScores.set(4, score);
+        if (score < zero) {
+            mScores.set(four, score * MinusOne);
+        } else {
+            mScores.set(four, score);
+        }
     }
 
     /**
@@ -232,7 +265,7 @@ public class ReportCard {
      * @return score of Physical Education Subject
      */
     public double getPhysicalEducationScore() {
-        return mScores.get(5);
+        return mScores.get(five);
     }
 
     /**
@@ -241,7 +274,11 @@ public class ReportCard {
      * @param score is the score of Physical Education subject
      */
     public void setPhysicalEducationScore(double score) {
-        mScores.set(5, score);
+        if (score < zero) {
+            mScores.set(five, score * MinusOne);
+        } else {
+            mScores.set(five, score);
+        }
     }
 
     /**
